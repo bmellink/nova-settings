@@ -1,13 +1,13 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Http\Controllers;
+namespace bmellink\NovaSettings\Http\Controllers;
 
 use Laravel\Nova\Panel;
 use Illuminate\Http\Request;
 use Laravel\Nova\ResolvesFields;
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Contracts\Resolvable;
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 use Illuminate\Support\Facades\Storage;
 use Laravel\Nova\Fields\FieldCollection;
 use Illuminate\Support\Facades\Validator;

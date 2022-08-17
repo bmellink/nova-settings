@@ -1,13 +1,13 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Tests;
+namespace bmellink\NovaSettings\Tests;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Outl1ne\NovaSettings\NovaSettingsServiceProvider;
+use bmellink\NovaSettings\NovaSettingsServiceProvider;
 
 abstract class IntegrationTestCase extends Orchestra
 {

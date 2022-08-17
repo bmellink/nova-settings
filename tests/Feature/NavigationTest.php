@@ -1,10 +1,10 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Tests\Feature;
+namespace bmellink\NovaSettings\Tests\Feature;
 
 use Laravel\Nova\Fields\Text;
-use Outl1ne\NovaSettings\NovaSettings;
-use Outl1ne\NovaSettings\Tests\IntegrationTestCase;
+use bmellink\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\Tests\IntegrationTestCase;
 
 class NavigationTest extends IntegrationTestCase
 {

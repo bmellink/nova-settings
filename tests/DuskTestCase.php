@@ -1,11 +1,11 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Tests;
+namespace bmellink\NovaSettings\Tests;
 
 use Laravel\Nova\Nova;
 use Laravel\Dusk\Browser;
 use Laravel\Nova\Fields\Text;
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 use Illuminate\Foundation\Application;
 
 abstract class DuskTestCase extends \Orchestra\Testbench\Dusk\TestCase
@@ -72,7 +72,7 @@ abstract class DuskTestCase extends \Orchestra\Testbench\Dusk\TestCase
             'Fideloper\Proxy\TrustedProxyServiceProvider',
             'Laravel\Nova\NovaCoreServiceProvider',
             'Carbon\Laravel\ServiceProvider',
-            'Outl1ne\NovaSettings\NovaSettingsServiceProvider',
+            'bmellink\NovaSettings\NovaSettingsServiceProvider',
         ];
     }
 

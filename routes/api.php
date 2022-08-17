@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::namespace('\Outl1ne\NovaSettings\Http\Controllers')->group(function () {
+Route::namespace('\bmellink\NovaSettings\Http\Controllers')->group(function () {
     Route::prefix('nova-vendor/nova-settings')->group(function () {
         Route::get('/settings', 'SettingsController@get')->name('nova-settings.get');
         Route::post('/settings', 'SettingsController@save')->name('nova-settings.save');

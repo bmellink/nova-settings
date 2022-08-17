@@ -1,6 +1,6 @@
 <?php
 
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 
 if (!function_exists('nova_get_settings')) {
     function nova_get_settings($settingKeys = null, $defaults = [])

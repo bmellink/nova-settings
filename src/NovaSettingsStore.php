@@ -1,6 +1,6 @@
 <?php
 
-namespace Outl1ne\NovaSettings;
+namespace bmellink\NovaSettings;
 
 use Illuminate\Support\Str;
 

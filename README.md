@@ -1,13 +1,15 @@
 # Nova Settings
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/outl1ne/nova-settings.svg?style=flat-square)](https://packagist.org/packages/outl1ne/nova-settings)
-[![Total Downloads](https://img.shields.io/packagist/dt/outl1ne/nova-settings.svg?style=flat-square)](https://packagist.org/packages/outl1ne/nova-settings)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/bmellink/nova-settings.svg?style=flat-square)](https://packagist.org/packages/bmellink/nova-settings)
+[![Total Downloads](https://img.shields.io/packagist/dt/bmellink/nova-settings.svg?style=flat-square)](https://packagist.org/packages/bmellink/nova-settings)
 
 This [Laravel Nova](https://nova.laravel.com) package allows you to create custom settings in code (using Nova's native fields) and creates a UI for the users where the settings can be edited.
 
+This version also runs on php 7.x.
+
 ## Requirements
 
-- `php: >=8.0`
+- `php: >=7.4`
 - `laravel/nova: ^4.0`
 
 ## Features
@@ -27,7 +29,7 @@ Install the package in a Laravel Nova project via Composer and run migrations:
 
 ```bash
 # Install nova-settings
-composer require outl1ne/nova-settings
+composer require bmellink/nova-settings
 
 # Run migrations
 php artisan migrate
@@ -42,7 +44,7 @@ public function tools()
 {
     return [
         // ...
-        new \Outl1ne\NovaSettings\NovaSettings
+        new \bmellink\NovaSettings\NovaSettings
     ];
 }
 ```
@@ -55,7 +57,7 @@ Define the fields in your `NovaServiceProvider`'s `boot()` function by calling `
 
 ```php
 // Using an array
-\Outl1ne\NovaSettings\NovaSettings::addSettingsFields([
+\bmellink\NovaSettings\NovaSettings::addSettingsFields([
     Text::make('Some setting', 'some_setting'),
     Number::make('A number', 'a_number'),
 ]);
@@ -63,7 +65,7 @@ Define the fields in your `NovaServiceProvider`'s `boot()` function by calling `
 // OR
 
 // Using a callable
-\Outl1ne\NovaSettings\NovaSettings::addSettingsFields(function() {
+\bmellink\NovaSettings\NovaSettings::addSettingsFields(function() {
   return [
     Text::make('Some setting', 'some_setting'),
     Number::make('A number', 'a_number'),
@@ -75,7 +77,7 @@ Define the fields in your `NovaServiceProvider`'s `boot()` function by calling `
 
 ```php
 // Using an array
-\Outl1ne\NovaSettings\NovaSettings::addSettingsFields([
+\bmellink\NovaSettings\NovaSettings::addSettingsFields([
     Panel::make('Panel Title', [
       Text::make('Some setting', 'some_setting'),
       Number::make('A number', 'a_number'),
@@ -88,7 +90,7 @@ Define the fields in your `NovaServiceProvider`'s `boot()` function by calling `
 If you want the value of the setting to be formatted before it's returned, pass an array similar to `Eloquent`'s `$casts` property as the second parameter.
 
 ```php
-\Outl1ne\NovaSettings\NovaSettings::addSettingsFields([
+\bmellink\NovaSettings\NovaSettings::addSettingsFields([
     // ... fields
 ], [
   'some_boolean_value' => 'boolean',
@@ -103,7 +105,7 @@ If you want the value of the setting to be formatted before it's returned, pass 
 Add a settings page name as a third argument to list those settings in a custom subpage.
 
 ```php
-\Outl1ne\NovaSettings\NovaSettings::addSettingsFields([
+\bmellink\NovaSettings\NovaSettings::addSettingsFields([
     Text::make('Some setting', 'some_setting'),
     Number::make('A number', 'a_number'),
 ], [], 'Subpage');
@@ -158,7 +160,7 @@ Sets a setting value for the given key.
 The config file can be published using the following command:
 
 ```bash
-php artisan vendor:publish --provider="Outl1ne\NovaSettings\NovaSettingsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="bmellink\NovaSettings\NovaSettingsServiceProvider" --tag="config"
 ```
 
 | Name                  | Type    | Default           | Description                                                                        |
@@ -170,7 +172,7 @@ php artisan vendor:publish --provider="Outl1ne\NovaSettings\NovaSettingsServiceP
 The migration can also be published and overwritten using:
 
 ```bash
-php artisan vendor:publish --provider="Outl1ne\NovaSettings\NovaSettingsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="bmellink\NovaSettings\NovaSettingsServiceProvider" --tag="migrations"
 ```
 
 ## Localization
@@ -178,7 +180,7 @@ php artisan vendor:publish --provider="Outl1ne\NovaSettings\NovaSettingsServiceP
 The translation file(s) can be published by using the following command:
 
 ```bash
-php artisan vendor:publish --provider="Outl1ne\NovaSettings\NovaSettingsServiceProvider" --tag="translations"
+php artisan vendor:publish --provider="bmellink\NovaSettings\NovaSettingsServiceProvider" --tag="translations"
 ```
 
 You can add your translations to `resources/lang/vendor/nova-settings/` by creating a new translations file with the locale name (ie `et.json`) and copying the JSON from the existing `en.json`.

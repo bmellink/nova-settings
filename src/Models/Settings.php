@@ -1,8 +1,8 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Models;
+namespace bmellink\NovaSettings\Models;
 
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 use Illuminate\Database\Eloquent\Model;
 
 class Settings extends Model

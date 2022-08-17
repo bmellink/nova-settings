@@ -1,9 +1,9 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Tests\Feature;
+namespace bmellink\NovaSettings\Tests\Feature;
 
-use Outl1ne\NovaSettings\Models\Settings;
-use Outl1ne\NovaSettings\Tests\IntegrationTestCase;
+use bmellink\NovaSettings\Models\Settings;
+use bmellink\NovaSettings\Tests\IntegrationTestCase;
 
 class SettingsHelpersTest extends IntegrationTestCase
 {

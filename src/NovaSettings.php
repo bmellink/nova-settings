@@ -1,6 +1,6 @@
 <?php
 
-namespace Outl1ne\NovaSettings;
+namespace bmellink\NovaSettings;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Laravel\Nova\Menu\MenuItem;
 use Laravel\Nova\Menu\MenuSection;
-use Outl1ne\NovaSettings\Models\Settings;
+use bmellink\NovaSettings\Models\Settings;
 
 class NovaSettings extends Tool
 {
@@ -54,7 +54,7 @@ class NovaSettings extends Tool
     public static function getAuthorizations($key = null)
     {
         $request = request();
-        $fakeResource = new \Outl1ne\NovaSettings\Nova\Resources\Settings(NovaSettings::getSettingsModel()::make());
+        $fakeResource = new \bmellink\NovaSettings\Nova\Resources\Settings(NovaSettings::getSettingsModel()::make());
 
         $authorizations = [
             'authorizedToView' => $fakeResource->authorizedToView($request),

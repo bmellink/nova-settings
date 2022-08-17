@@ -1,11 +1,11 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Tests\Feature;
+namespace bmellink\NovaSettings\Tests\Feature;
 
 use Laravel\Nova\Fields\Number;
-use Outl1ne\NovaSettings\NovaSettings;
-use Outl1ne\NovaSettings\Models\Settings;
-use Outl1ne\NovaSettings\Tests\IntegrationTestCase;
+use bmellink\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\Models\Settings;
+use bmellink\NovaSettings\Tests\IntegrationTestCase;
 
 class SettingsCastTest extends IntegrationTestCase
 {

@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- NB! Changed namespace from OptimistDigital to Outl1ne
+- NB! Changed namespace from OptimistDigital to bmellink
 - Allow redirections as a result of settings updates (thanks to [@ianrobertsFF](https://github.com/ianrobertsFF))
 - Fixed sidebar subpages titles (thanks to [@faab007nl](https://github.com/faab007nl))
 - Updated packages

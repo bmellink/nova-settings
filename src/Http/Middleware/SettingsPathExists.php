@@ -1,9 +1,9 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Http\Middleware;
+namespace bmellink\NovaSettings\Http\Middleware;
 
 
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 
 class SettingsPathExists
 {

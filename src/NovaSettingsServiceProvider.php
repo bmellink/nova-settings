@@ -1,14 +1,14 @@
 <?php
 
-namespace Outl1ne\NovaSettings;
+namespace bmellink\NovaSettings;
 
 use Laravel\Nova\Nova;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Http\Middleware\Authenticate;
-use Outl1ne\NovaSettings\Http\Middleware\Authorize;
-use Outl1ne\NovaTranslationsLoader\LoadsNovaTranslations;
-use Outl1ne\NovaSettings\Http\Middleware\SettingsPathExists;
+use bmellink\NovaSettings\Http\Middleware\Authorize;
+use bmellink\NovaTranslationsLoader\LoadsNovaTranslations;
+use bmellink\NovaSettings\Http\Middleware\SettingsPathExists;
 
 class NovaSettingsServiceProvider extends ServiceProvider
 {

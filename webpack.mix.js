@@ -10,7 +10,7 @@ mix
       vue: 'Vue',
     },
     output: {
-      uniqueName: 'outl1ne/nova-settings',
+      uniqueName: 'bmellink/nova-settings',
     },
   })
   .alias({

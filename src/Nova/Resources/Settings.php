@@ -1,10 +1,10 @@
 <?php
 
-namespace Outl1ne\NovaSettings\Nova\Resources;
+namespace bmellink\NovaSettings\Nova\Resources;
 
 use Laravel\Nova\Resource;
 use Illuminate\Http\Request;
-use Outl1ne\NovaSettings\NovaSettings;
+use bmellink\NovaSettings\NovaSettings;
 
 class Settings extends Resource
 {
